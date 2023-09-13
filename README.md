@@ -1,4 +1,4 @@
-# vite-plugin-purgecss [![npm](https://img.shields.io/npm/v/@xhayper/vite-plugin-purgecss.svg)](https://npmjs.com/package/@xhayper/vite-plugin-purgecss)
+# @xhayper/vite-plugin-purgecss [![npm](https://img.shields.io/npm/v/@xhayper/vite-plugin-purgecss.svg)](https://npmjs.com/package/@xhayper/vite-plugin-purgecss)
 
 Vite plugin for [PurgeCSS](https://purgecss.com/)
 
