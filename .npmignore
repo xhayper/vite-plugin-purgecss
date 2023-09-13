@@ -1,0 +1,16 @@
+# Folder
+examples/
+.vscode/
+.github/
+scripts/
+src/
+
+# File
+build.config.ts
+tsconfig.json
+.prettierrc
+.npmrc
+*.tgz
+
+# lockfile
+pnpm-lock.yaml

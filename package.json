@@ -1,0 +1,51 @@
+{
+  "name": "vite-plugin-purgecss",
+  "version": "1.0.0",
+  "description": "Vite plugin for PurgeCSS",
+  "keywords": [
+    "vite",
+    "purgecss",
+    "css"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild && pnpm run patch-cjs",
+    "patch-cjs": "tsx ./scripts/patchCJS.ts",
+    "prepublish": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhayper/vite-plugin-purgecss.git"
+  },
+  "author": "xhayper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xhayper/vite-plugin-purgecss/issues"
+  },
+  "homepage": "https://github.com/xhayper/vite-plugin-purgecss#readme",
+  "dependencies": {
+    "purgecss": "^5.0.0",
+    "unbuild": "^2.0.0",
+    "vite": "^4.4.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "picocolors": "^1.0.0",
+    "tsx": "^3.12.9",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0",
+    "purgecss": "^5.0.0"
+  }
+}
