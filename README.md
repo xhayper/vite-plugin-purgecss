@@ -2,6 +2,8 @@
 
 Vite plugin for [PurgeCSS](https://purgecss.com/)
 
+Updated version of [vite-plugin-html-purgecss](https://github.com/Jax-p/vite-plugin-html-purgecss)
+
 ## Usage
 
 ```ts
